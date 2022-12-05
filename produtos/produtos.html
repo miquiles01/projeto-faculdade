@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos</title>
+        <link rel="stylesheet" href="produtos.css">
+        <script src="produtos.js"></script>
+        <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon" />
+    </head>
+    <body>
+        <div id="login">
+            <div class="card">
+                <h1 class="card-header">Produtos</h1>
+                <p>Para uma administração melhor, é necessário cadastrar os produtos da empresa</p>
+    
+                <div id="msgError"></div>
+                
+                <div class="lebal-float">
+                    <input class="inputs-login" type="text" id="produtos" placeholder="" required>
+                    <label id="produtos" for="produtos">Tipo</label>
+                </div>
+
+                <div class="lebal-float">
+                    <input class="inputs-login" type="text" id="quantidade" placeholder="" required>
+                    <label id="quantidade" for="quantidade">Quantidade</label>
+                </div>
+
+                <div class="lebal-float">
+                    <input class="inputs-login" type="text" id="marcas" placeholder="" required>
+                    <label id="marcas" for="marcas">Marca</label>
+                </div>
+
+                <div class="lebal-float">
+                    <input class="inputs-login" type="text" id="identificacao" placeholder="" required>
+                    <label id="identificacao" for="identificacao">ID</label>
+                </div>
+
+                <div class="justify-center">
+                    <button class="btn" onclick="entrar()">Cadastrar produto</button>
+                </div>
+    
+                <div class="justify-center">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    
+        <script src="src/js/produtos.js"></script>
+    </body>
+    </html>

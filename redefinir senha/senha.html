@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir senha</title>
+    <link rel="stylesheet" href="senha.css">
+    <script src="senha.js"></script>
+    <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon" />
+</head>
+<body>
+    <div id="login">
+        <div class="card">
+            <h1 class="card-header">Redefinir senha</h1>
+
+            <div id="msgError">
+            </div>
+            
+            <div class="lebal-float">
+                <input class="inputs-login" type="email" id="usurio" placeholder="" required>
+                <label id="userLabel" for="usuario">Email</label>
+            </div>
+            <div class="lebal-float">
+                <input class="inputs-login" type="password" id="senha" placeholder="" required>
+                <label id="senhaLabel" for="senha">Nova senha</label>
+                <i class="bi bi-eye"></i>
+            </div>
+			
+			<div class="lebal-float">
+                <input class="inputs-login" type="password" id="senha" placeholder="" required>
+                <label id="senhaLabel" for="senha">Repetir novamente a nova senha</label>
+                <i class="bi bi-eye"></i>
+            </div>
+
+            <div class="justify-center">
+                <button class="btn" onclick="entrar()">Alterar</button>
+            </div>
+
+            <div class="justify-center">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/senha.js"></script>
+</body>
+</html>

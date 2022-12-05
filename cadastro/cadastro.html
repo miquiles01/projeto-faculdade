@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="cadastrar.css">
+    <script src="cadastro.js"></script>
+    <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon" />
+
+</head>
+<body>
+    <div id="cadastro">
+        <div class="card">
+            <h1 class="title-login">Cadastro</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+            
+            <div class="lebal-float">
+                <input class="inputs-login" type="text" id="nome" placeholder="" required>
+                <label id="labelNome" for="nome">Nome</label>
+            </div>
+
+            <div class="lebal-float">
+                <input class="inputs-login" type="email" id="usurio" placeholder="" required>
+                <label id="userLabel" for="usuario">Email</label>
+            </div>
+
+            <div class="lebal-float">
+                <input class="inputs-login" type="password" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id="verSenha" class="bi bi-eye"></i>
+            </div>
+
+            <div class="lebal-float">
+                <input class="inputs-login" type="password" id="confirmSenha" placeholder="" required>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                <i id="verSenhaConfirm" class="bi bi-eye"></i>
+            </div>
+
+            <div class="justify-center">
+                <button class="btn" onclick="cadastar()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="src/js/cadastro.js"></script>
+</body>
+</html>

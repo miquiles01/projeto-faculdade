@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    background-color: #547c64;
+}
+
+#cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.card {
+    background-color: #ffffff80;/*opacity no hexadecimal*/
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000080 ; /*opacity no hexadecimal*/
+    width: 400px;
+}
+.title-login {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+.lebal-float {
+    position: relative;
+    padding-top: 13px;
+    margin: 5% 0 5% 0;
+
+}
+.lebal-float .inputs-login {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none; /*Retira a border ao clicar*/
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+.lebal-float .inputs-login:focus {
+    border-bottom: 2px solid #4038a0;
+}
+
+.lebal-float label {
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-in-out;
+}
+.lebal-float .inputs-login:focus + label,
+.lebal-float .inputs-login:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #4030a0;
+}
+.bi-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #272262;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: transparent;
+    border-color: #272262;
+    color: #29223b;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-in-out;
+}
+.btn:hover {
+    background-color: #4038a0;
+    color: #fff;
+}
+
+#msgError {
+    text-align: center;
+    color: #fff;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    transition: all .3s ease-in-out;
+}
+#msgSuccess {
+    text-align: center;
+    color: #fff;
+    background-color: #5b9e5b;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    transition: all .3s ease-in-out;
+}
